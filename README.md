@@ -60,6 +60,7 @@ Building on this concept, we're going to build our own shape calculator!
 - Define setter methods for `diameter`, `circumference`, and `area` which
   will accept values for each calculation, calculate the _radius_ based on the
   input value and _set_ `this.radius` accordingly
+  - **Hint:** You will need to use [Math.sqrt()][Math.sqrt()] in your `area` setter method
 
 For reference, here are the formulas for calculating diameter, circumference and
 area:
@@ -90,3 +91,4 @@ the output you want.
 - [Property getters and setters](https://javascript.info/property-accessors)
 
 [pi]: https://en.wikipedia.org/wiki/Pi
+[Math.sqrt()]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
