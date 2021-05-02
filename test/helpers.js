@@ -9,13 +9,15 @@ const url = "http://localhost"
 const html = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf-8')
 
 const babelResult = babel.transformFileSync(
-  path.resolve(__dirname, '..', 'index.js'), {
-    presets: ['@babel/env']
-  }
+    path.resolve(__dirname, '..', 'index.js'), {
+        presets: ['@babel/env']
+    }
 );
 
 const src = babelResult.code
 
 jsdom({
-  html, src, url
+    html,
+    src,
+    url: "https://localhost"
 });
