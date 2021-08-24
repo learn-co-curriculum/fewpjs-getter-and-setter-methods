@@ -9,13 +9,13 @@
     "author": "flatironschool",
     "license": "Included in Repo",
     "dependencies": {
-        "@babel/core": "^7.14.0",
-        "@babel/preset-env": "^7.14.0",
+        "@babel/core": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
         "chai": "^4.3.4",
         "file-system": "^2.2.2",
         "foo": "^0.0.7",
-        "jsdom": "^16.5.3",
-        "mocha": "^8.3.2",
+        "jsdom": "^17.0.0",
+        "mocha": "^9.1.0",
         "mocha-jsdom": "~2.0.0",
         "mocha-multi": "^1.1.3"
     }
