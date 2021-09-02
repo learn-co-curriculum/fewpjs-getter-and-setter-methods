@@ -60,7 +60,18 @@ Building on this concept, we're going to build our own shape calculator!
 - Define setter methods for `diameter`, `circumference`, and `area` which
   will accept values for each calculation, calculate the _radius_ based on the
   input value and _set_ `this.radius` accordingly
-  - **Hint:** You will need to use [Math.sqrt()][Math.sqrt()] in your `area` setter method
+
+**Hints:**
+
+- You will need to use [Math.sqrt()][Math.sqrt()] in your `area` setter method
+- Recall that our `Circle` class only has one parameter: `radius`. This is
+  because all of the other values can be calculated from the radius, so there's
+  no reason to store them separately. What this means is that, for the setter
+  methods for `diameter`, `circumference` and `area`, you will need to calculate
+  the new value for `radius` by "reverse engineering" the appropriate formula,
+  then set the `Circle` instance's `radius` to this new value. This will
+  effectively set the other measurements as well, since they are derived from
+  the `radius`.
 
 For reference, here are the formulas for calculating diameter, circumference and
 area:
